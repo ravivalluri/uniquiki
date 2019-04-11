@@ -1,0 +1,10 @@
+<nav class="bar__categories">
+
+  <ng-container *ngFor="let category of categories; trackBy: identify">
+    <a class="bar__category"
+       [routerLink]="slice.category.stateFn({ category: category.toLowerCase() })">
+      {{ category }}
+    </a>
+  </ng-container>
+
+</nav>

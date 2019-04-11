@@ -1,0 +1,28 @@
+:host {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  font-size: 19px;
+  z-index: 2;
+  width: 135px;
+  height: 50px;
+  border: 2px solid #EEEEEE;
+  background: #212121;
+  color: white;
+  box-shadow: 0px 0px 18px 7px #616161, 2px 0 18px 3px #757575 inset;
+  transition: .5s;
+  transition-delay: .1s;
+  transition-timing-function: linear;
+
+  &:hover {
+    border-radius: 3px;
+    background: #9E9E9E;
+    border-color: #F5F5F5;
+    box-shadow: 0 0 20px 3px #FAFAFA;
+  }
+}

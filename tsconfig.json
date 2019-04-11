@@ -1,0 +1,90 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "../dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es2018",
+      "esnext.asynciterable"
+    ],
+    "paths": {
+      "~app/*": [
+        "app/*"
+      ],
+      "~assets/*": [
+        "assets/*"
+      ],
+      "~env/*": [
+        "environments/*"
+      ],
+      "~helpers/*": [
+        "helpers/*"
+      ],
+      "~main/*": [
+        "main/*"
+      ],
+      "~test/*": [
+        "test/*"
+      ],
+      "+shared/*": [
+        "app/shared/*"
+      ],
+      "-core/*": [
+        "app/core/*"
+      ],
+      "-routing/*": [
+        "app/routing/*"
+      ],
+      "+material/*": [
+        "app/shared/material/*"
+      ],
+      "+apollo/*": [
+        "app/core/apollo/*"
+      ],
+      "+store": [
+        "app/core/store"
+      ],
+      "+store/*": [
+        "app/core/store/*"
+      ],
+      "-auth/*": [
+        "app/views/auth/*"
+      ],
+      "-cart/*": [
+        "app/views/cart/*"
+      ],
+      "-home/*": [
+        "app/views/home/*"
+      ],
+      "-shop/*": [
+        "app/views/shop/*"
+      ],
+      "-location/*": [
+        "app/views/location/*"
+      ],
+      "-user-center/*": [
+        "app/views/user-center/*"
+      ]
+    }
+  }
+}
+
+/**
+ Imports:
+ '' <> 3-rd party
+ @  <> 3-rd party
+ +  <> external / shared resources
+ -  <> modules
+ ~  <> main
+*/
